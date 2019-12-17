@@ -6,4 +6,6 @@ layout: main
 title: Home
 ---
 
-<h2>Home</h2>
+{% for game in site.games %}
+<div>{{ game }}</div>
+{% endfor %}
