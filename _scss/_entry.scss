@@ -1,5 +1,6 @@
 .entry {
   background: #f8f8f8;
+  border-top-right-radius: 5em;
   position: relative;
   z-index: 30;
   top: -3em;
@@ -19,6 +20,7 @@
 .entry-media {
   position: relative;
   overflow: hidden;
+  border-bottom-left-radius: 5em;
 
   @include bp(desktop) {
     flex: 0 0 50%;

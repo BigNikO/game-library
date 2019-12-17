@@ -1,7 +1,8 @@
 :root {
-  --theme-color-light: rgb(85, 135, 192);
-  --theme-color-main: rgb(44, 97, 158);
-  --theme-color-dark: rgb(18, 63, 114);
+  --theme-color-ultra-light: rgba(32, 84, 143, 0.226);
+  --theme-color-light: rgb(105, 85, 192);
+  --theme-color-main: rgb(61, 44, 158);
+  --theme-color-dark: rgb(36, 18, 114);
 
   --theme-text: rgb(0, 0, 0);
   --theme-contrast-text: rgb(255, 255, 255);
@@ -12,6 +13,11 @@ html {
 }
 
 .site {
-  max-width: 70em;
+  // max-width: 70em;
   margin: 0 auto;
+
+  .site-main {
+    max-width: 70em;
+    margin: 0 auto;
+  }
 }
