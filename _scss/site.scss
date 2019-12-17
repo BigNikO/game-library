@@ -7,18 +7,11 @@
   --theme-contrast-text: rgb(255, 255, 255);
 }
 
-body {
+html {
+  background-color: #f8f8f8;
 }
 
 .site {
-  max-width: 60em;
+  max-width: 80em;
   margin: 0 auto;
-}
-
-.site-header {
-  display: flex;
-  color: var(--theme-contrast-text);
-  background-color: var(--theme-color-main);
-  align-items: center;
-  justify-content: space-between;
 }
