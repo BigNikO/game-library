@@ -1,0 +1,17 @@
+:root {
+  --theme-color-light: rgb(85, 135, 192);
+  --theme-color-main: rgb(44, 97, 158);
+  --theme-color-dark: rgb(18, 63, 114);
+
+  --theme-text: rgb(0, 0, 0);
+  --theme-contrast-text: rgb(255, 255, 255);
+}
+
+html {
+  background-color: #f8f8f8;
+}
+
+.site {
+  max-width: 70em;
+  margin: 0 auto;
+}
