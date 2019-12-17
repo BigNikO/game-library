@@ -1,6 +1,5 @@
 .nav ul {
   display: flex;
-  padding: 1em;
 }
 
 .nav ul li {
@@ -14,6 +13,9 @@
 
   &:hover {
     background-color: var(--theme-color-main);
+  }
+  &:nth-child(3) {
+    margin-right: 1em;
   }
 }
 

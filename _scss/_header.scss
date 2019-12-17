@@ -3,11 +3,11 @@
   color: var(--theme-contrast-text);
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 3em 2em;
+  padding: 0 0 3em 0;
 
   div {
     color: var(--theme-color-main);
-    padding-top: 1em;
+    padding: 1em 0 0 1em;
   }
 
   h1 a {
