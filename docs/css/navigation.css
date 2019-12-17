@@ -1,1 +1,0 @@
-.nav ul,.nav ul li{display:-webkit-box;display:flex;padding:1em}.nav ul li{margin:.2em;background-color:var(--theme-color-light);border-radius:.3em;-webkit-box-align:center;align-items:center;cursor:pointer}.nav ul li:hover{background-color:var(--theme-color-main)}.nav a{display:block;font-weight:600;text-decoration:none;color:inherit;margin-left:.5em}
