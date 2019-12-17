@@ -18,13 +18,15 @@
       <header class="site-header">
         <div>
           <h1>
-            {{site.title}}
+            <a href="{{site.baseurl}}">
+              {{site.title}}
+            </a>
           </h1>
           <p>{{site.description}}</p>
         </div>
         <nav class="nav">
           <ul>
-            {% for page in site.pages %} {% if page.title %}
+            {% for page in site.pages %} {% if page.navtitle %}
             <li>
               <i class="fas fa-running"></i
               ><a href="{{site.baseurl}}{{page.url}}">
