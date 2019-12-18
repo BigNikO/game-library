@@ -5,4 +5,37 @@ navtitle: Contacts
 permalink: /contacts/
 ---
 
-<h2>Contacts</h2>
+<div class="cover">
+  <div class="form-wrapper">
+    <form
+      action="mailto:someone@example.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <input
+        spellcheck="false"
+        type="text"
+        name="name"
+        placeholder="Name"
+      /><br />
+      <input
+        spellcheck="false"
+        type="text"
+        name="mail"
+        placeholder="E-mail"
+      /><br />
+      <textarea
+        spellcheck="false"
+        type="text"
+        name="comment"
+        size="50"
+        placeholder="Message"
+      ></textarea
+      ><br /><br />
+      <div class="submit-buttons">
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </div>
+</div>

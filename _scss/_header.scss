@@ -4,13 +4,62 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 0 3em 0;
+  position: relative;
+
+  @include bp(mobile) {
+    flex-direction: column;
+    justify-content: center;
+  }
 
   div {
     color: var(--theme-color-main);
     padding: 1em 0 0 1em;
+    opacity: 1;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    z-index: 50;
+
+    @include bp(mobile) {
+      position: relative;
+    }
   }
 
   h1 a {
     text-decoration: none;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+
+    @include bp(mobile) {
+      position: relative;
+    }
   }
+
+  p {
+    top: 2.5em;
+    left: 1em;
+    position: absolute;
+    opacity: 1;
+
+    @include bp(mobile) {
+      position: relative;
+    }
+  }
+}
+
+.site-media {
+  background-image: url('https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  min-height: 60vh;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2em 0;
+  opacity: 0.1;
+  top: 0;
 }

@@ -1,0 +1,27 @@
+.site-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    width: 50vw;
+    border-radius: 50%;
+    background-color: rgba(54, 6, 143, 0.308);
+    transition: transform 1s;
+
+    &:hover {
+      z-index: 30;
+      transform: scale(1.5);
+    }
+
+    .social {
+      padding: 0;
+    }
+  }
+}

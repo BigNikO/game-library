@@ -1,0 +1,56 @@
+.cover {
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+      padding: 2em;
+      width: 50vw;
+      @include bp(mobile) {
+        width: 90vw;
+      }
+      input,
+      textarea {
+        font-size: 1em;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        width: 100%;
+        margin: 0.1em 0;
+        min-height: 10vh;
+        padding: 0 1em;
+        background-color: inherit;
+        border: 0;
+        border-bottom: 1px solid var(--theme-color-dark);
+        color: var(--theme-color-dark);
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background-color: rgba(rgba(128, 68, 206, 0.589), 0.2);
+          color: var(--theme-color-dark);
+          border-radius: 0.8em;
+        }
+      }
+
+      .submit-buttons {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+          width: 48%;
+          border: 1px solid var(--theme-color-light);
+          border-radius: 0.5em;
+        }
+      }
+
+      textarea {
+        resize: none;
+        margin-top: 1em;
+        padding: 0.5em 1em;
+        min-height: 20vh;
+      }
+    }
+  }
+}

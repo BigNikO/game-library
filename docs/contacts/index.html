@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script>
+      window.addEventListener('load', event => {
+        document.querySelector('body').classList.add('loaded');
+      });
+    </script>
+    <script>
       FontAwesomeConfig = {
         searchPseudoElements: true,
       };
@@ -18,7 +23,7 @@
       <header class="site-header">
         <div>
           <h1>
-            <a href="/game-library">
+            <a href="/game-library/">
               Game Library
             </a>
           </h1>
@@ -51,9 +56,43 @@
           </ul>
         </nav>
       </header>
+      <div class="site-media"></div>
       <div class="site-main">
         <main>
-          <h2>Contacts</h2>
+          <div class="cover">
+  <div class="form-wrapper">
+    <form
+      action="mailto:someone@example.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <input
+        spellcheck="false"
+        type="text"
+        name="name"
+        placeholder="Name"
+      /><br />
+      <input
+        spellcheck="false"
+        type="text"
+        name="mail"
+        placeholder="E-mail"
+      /><br />
+      <textarea
+        spellcheck="false"
+        type="text"
+        name="comment"
+        size="50"
+        placeholder="Message"
+      ></textarea
+      ><br /><br />
+      <div class="submit-buttons">
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </div>
+</div>
 
         </main>
       </div>
@@ -61,22 +100,23 @@
         <div class="site-wrapper">
           <div class="info">
             <p>Game Library</p>
-            <p>&copy; 2019 Jekyll project</p>
+            <p>&copy; 2019 Copyright</p>
           </div>
           <ul class="social">
-            <li>
-              <i class="fab fa-facebook"></i>
-            </li>
-            <li>
-              <i class="fab fa-instagram"></i>
-            </li>
-            <li>
-              <i class="fab fa-twitter"></i>
-            </li>
-            <li>
-              <i class="fab fa-pinterest"></i>
-            </li>
-          </ul>
+  <li>
+    <i class="fab fa-facebook"></i>
+  </li>
+  <li>
+    <i class="fab fa-instagram"></i>
+  </li>
+  <li>
+    <i class="fab fa-twitter"></i>
+  </li>
+  <li>
+    <i class="fab fa-pinterest"></i>
+  </li>
+</ul>
+
         </div>
       </footer>
     </div>
