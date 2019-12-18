@@ -75,20 +75,3 @@
 .entry-meta {
   margin-bottom: 3em;
 }
-
-.entry:nth-child(even) .entry-media {
-  order: 2;
-}
-
-.entry:nth-child(even) .entry-content {
-  @include bp(desktop) {
-    margin: 2em -2em 2em 2em;
-  }
-}
-
-.entry-content,
-.entry:nth-child(even) .entry-content {
-  @include bp(mobile) {
-    margin: -2em 2em 2em 2em;
-  }
-}
